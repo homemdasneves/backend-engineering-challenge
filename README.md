@@ -2,9 +2,14 @@
 
 ## Considerations
 
-- the input event stream will be ordered
-- there can be an arbitrary number of event on any given minute
+- there can be an arbitrary number of events on any given minute
 - there's only one type of event (event_name is always translation_delivered)
+
+## Installation
+
+- install pipenv (if needed)
+- to create virtual environment and install dependencies: pipenv install --dev
+- to activate the virtual environment run: pipenv shell
 
 ## Usage
 
