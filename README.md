@@ -1,15 +1,21 @@
 # Backend Engineering Challenge
 
+## Considerations
 
-Welcome to our Engineering Challenge repository 🖖
+- the input event stream will be ordered
+- there can be an arbitrary number of event on any given minute
+- there's only one type of event (event_name is always translation_delivered)
 
-If you found this repository it probably means that you are participating in our recruitment process. Thank you for your time and energy. If that's not the case please take a look at our [openings](https://unbabel.com/careers/) and apply!
+## Usage
 
-Please fork this repo before you start working on the challenge, read it careful and take your time and think about the solution. Also, please fork this repository because we will evaluate the code on the fork.
+To process a file named data.txt and consider a 10 minute window size:
+- python unbabel_cli.py moving-avg --input_file data.txt --window_size 10
 
-This is an opportunity for us both to work together and get to know each other in a more technical way. If have some doubt please open and issue and we'll reach out to help.
+To get help:
+- python unbabel_cli.py --help
+- python unbabel_cli.py moving-avg --help
 
-Good luck!
+After a successful execution results will be present in the file output.txt, otherwise an error message is displayed.
 
 ## Challenge Scenario
 
